@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Darkness | Hình ảnh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+        }
+
+        :root{
+            --bgrcolor: #727272;
+            --fontcolor: black;
+        }
+        body{
+            width: 100%;
+            background: var(--bgrcolor);
+        }
+        #menu{
+            height: 60px;
+            width: 1250px;
+            background: rgba(253,253,253,0.8);
+            padding-left: 285px;
+            position: relative;
+            z-index: 1;
+
+        }
+        #menu > i{
+            font-size: 30px;
+            float: left;
+            line-height: 60px;
+            color: var(--fontcolor);
+            
+            padding: 0 16px;
+        }
+        #menu > ul {
+            float: left;
+            list-style-type: none;
+            line-height: 60px;
+    
+        }
+        #menu > ul > li {
+            float: left;
+            font-size: 16px;
+            padding: 0 16px;
+            margin: 0 16px;
+            position: relative;
+        }
+        #menu > ul > li > a{
+            color: var(--fontcolor);
+            text-decoration: none;
+
+        }
+        #menu > ul > li:hover {
+            background: #727272;
+        }
+        #menu > ul > li:hover ul {
+            display: block;
+        }
+        #menu > ul > li > ul{
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            list-style-type: none;
+            display: none;
+            width: 200px;
+            
+        }
+        #menu > ul > li > ul > li{
+            background: var(--bgrcolor);
+            padding-left: 16px;
+        }
+
+        #menu > ul > li > ul > li:hover{
+            background: black;
+
+        }
+        @keyframes blurr {
+            0%{opacity: 30%;}
+            100%{opacity: 100%;}
+        }
+        #menu > ul > li > ul > li:hover > a{
+            color: white;
+
+        }
+        #menu > ul > li > ul > li > a{
+            text-decoration: none;
+            color: var(--fontcolor);
+        }
+
+        #banner {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 180px;
+            background: black;
+            background-size: 100%;
+            background-position: bottom;
+        }
+        #banner .download{
+            position: absolute;
+            bottom: 0;
+            left: 285px;
+            background: black;
+            height: 110px;
+            width: 645px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            
+        }
+        #banner .download img{
+            height: 90px;
+            width: 90px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+        #banner .download > p{
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-left: 120px;
+            margin-top: 12px;
+            word-spacing: 5px;
+        }
+        #banner .download > ul{
+            position: absolute;
+            bottom: 8px;
+            left: 120px;
+            height: 40px;
+            list-style-type: none;
+        }
+        #banner .download > ul > li{
+            float:left;
+            width: 135px;
+            background: black;
+            margin-right:15px;
+            border: 1px white ;
+            border-style: dashed;
+        }
+        #banner .download > ul > li a{
+            text-decoration: none;
+            color: white;
+            font-size: 11px;
+            float: left;
+            
+        }
+        #banner .download > ul > li >a > i{
+            float: left;
+            font-size: 35px;
+            padding-left: 5px;
+            line-height: 40px;
+        }
+        #banner .download > ul > li > a > p{
+            float: left;
+            line-height: 15px;
+            width: 71px;
+            padding: 7px;
+        }
+        #banner .download > ul > li:last-child > a > p{
+            line-height: 30px ;
+        }
+        
+        #content{
+            background: var(--bgrcolor);
+            position:relative;
+            top: 120px;
+            width: 60%;
+            margin-left: 285px;
+            text-align: justify;
+        }
+        #content img{
+            height: 170px;
+            padding: 10px;
+        }
+        #content p{
+            background: black;
+            width: 100%;
+            color: white;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+        #content p a{
+            color: white;
+            text-decoration: none;
+        }
+        #footer{
+            margin-top: 150px;
+            padding: 50px 0 30px 0 ;
+            background: var(--bgrcolor);
+            text-align: center;
+            font-size: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <i class="fas fa-home"></i>
+        <ul>
+            <li><a href="">Giới thiệu</a>
+                <ul>
+                    <li><a href="">Giới Thiệu Game</a></li>
+                    <li><a href="">Nhân Vật</a></li>
+                    <li><a href="">Điều Khoản Sử Dụng</a></li>
+                </ul>
+            </li>
+            <li><a href="">Thông tin</a>
+                <ul>
+                    <li><a href="">Tin Tức</a></li>
+                    <li><a href="">Sự Kiện</a></li>
+                    <li><a href="">Danh Sách Các Mốc Vip</a></li>
+                </ul>
+            </li>
+            <li><a href="">Hướng dẫn</a>
+                <ul>
+                    <li><a href="">Vượt Ải S</a></li>
+                    <li><a href="">Khu Thiết Kế</a></li>
+                    <li><a href="">Cách Đạt Điểm Cao</a></li>
+                </ul>
+            </li>
+            <li style="background: #727272;"><a href="">Hình ảnh</a></li>
+            <li><a href="">Cộng đồng</a></li>
+        </ul>
+
+    </div>
+    <div id="banner">
+        <div class="download">
+            <img src="./Imgs/avatar.jpg" alt="">
+            <p>The Darkness</p>
+            <ul>
+                <li><a href=""><i class="fab fa-apple"></i><p>TẢI GAME cho iOS</p></a></li>
+                <li><a href=""><i class="fab fa-android"></i><p>TẢI GAME cho ANDROID</p> </a></li>
+                <li><a href=""><i class="fas fa-robot"></i><p>TẢI APK</p></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <img src="./Imgs/1.jpg" alt="">
+        <img src="./Imgs/banner.jpg" alt="">
+        <img src="./Imgs/avatar.jpg" alt="">
+        <img src="./Imgs/Picture1.png" alt="">
+        <img src="./Imgs/Picture2.png" alt="">
+        <img src="./Imgs/Picture3.png" alt="">
+        <img src="./Imgs/Picture4.png" alt="">
+        <img src="./Imgs/Picture5.png" alt="">
+        <img src="./Imgs/Picture6.png" alt="">
+        <img src="./Imgs/Picture7.png" alt="">
+        <img src="./Imgs/Picture8.png" alt="">
+        <img src="./Imgs/Picture9.png" alt="">
+        <img src="./Imgs/Picture10.png" alt="">
+        <img src="./Imgs/Picture11.png" alt="">
+
+        <p><a href="">Xem thêm +</a></p>
+    </div>
+
+
+    </div>
+    <div id="footer">
+        <p><i class="far fa-copyright"></i> Công ty ABCXYZ</p>
+        <p>Địa chỉ: *** Trương Định, Hai Bà Trưng, Hà Nội</p>
+        <p>Giấy phép phê duyệt nội dung số: ***/QĐ-BTTT cấp ngày 30/2/2016 do bộ thông tin và truyền thông cấp</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dvhh | The Darkness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+
+        }
+        :root{
+            --bgrcolor: #FFFF99;
+            --fontcolor: black;
+        }
+        body{
+            width: 100%;
+        }
+        #menu{
+            height: 60px;
+            width: 1250px;
+            background: rgba(253,253,253,0.8);
+            padding-left: 285px;
+            position: relative;
+            z-index: 1;
+
+        }
+        #menu > i{
+            font-size: 30px;
+            float: left;
+            line-height: 60px;
+            color: var(--fontcolor);
+            background: rgb(247, 235, 72);
+            padding: 0 16px;
+        }
+        #menu > ul {
+            float: left;
+            list-style-type: none;
+            line-height: 60px;
+    
+        }
+        #menu > ul > li {
+            float: left;
+            font-size: 16px;
+            padding: 0 16px;
+            margin: 0 16px;
+            position: relative;
+        }
+        #menu > ul > li > a{
+            color: var(--fontcolor);
+            text-decoration: none;
+
+        }
+        #menu > ul > li:hover {
+            background: #FFFF99;
+        }
+        #menu > ul > li:hover ul {
+            display: block;
+        }
+        #menu > ul > li > ul{
+            position: absolute;
+            left: 0;
+            z-index: 1;
+            list-style-type: none;
+            display: none;
+            width: 200px;
+            
+        }
+        #menu > ul > li > ul li{
+            background: var(--bgrcolor);
+            padding-left: 16px;
+            
+        }
+
+        #menu > ul > li > ul > li:hover{
+            background: rgb(247, 235, 72);
+            animation: blurr 2s;
+        }
+        @keyframes blurr {
+            0%{opacity: 30%;}
+            100%{opacity: 100%;}
+        }
+        #menu > ul > li > ul > li:hover > a{
+            color: #FFFF99;
+        }
+        #menu > ul > li > ul > li > a{
+            text-decoration: none;
+            color: var(--fontcolor);
+        }
+
+        #banner {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 400px;
+            background-image: url(./Imgs/banner.jpg);
+            background-size: 100%;
+            background-position: bottom;
+        }
+        #banner .download{
+            position: absolute;
+            bottom: 0;
+            left: 285px;
+            background: var(--bgrcolor);
+            height: 110px;
+            width: 645px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            
+        }
+        #banner .download img{
+            height: 90px;
+            width: 90px;
+            float: left;
+            margin-left: 10px;
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+        #banner .download > p{
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-left: 120px;
+            margin-top: 12px;
+            word-spacing: 5px;
+        }
+        #banner .download > ul{
+            position: absolute;
+            bottom: 8px;
+            left: 120px;
+            height: 40px;
+            list-style-type: none;
+        }
+        #banner .download > ul > li{
+            float:left;
+            width: 135px;
+            background: rgb(253, 252, 203);
+            margin-right:15px;
+            border: 1px rgb(247, 235, 72) ;
+            border-style: dashed;
+        }
+        #banner .download > ul > li a{
+            text-decoration: none;
+            color: rgb(247, 235, 72);
+            font-size: 11px;
+            float: left;
+            
+        }
+        #banner .download > ul > li >a > i{
+            float: left;
+            font-size: 35px;
+            padding-left: 5px;
+            line-height: 40px;
+        }
+        #banner .download > ul > li > a > p{
+            float: left;
+            line-height: 15px;
+            width: 71px;
+            padding: 7px;
+        }
+        #banner .download > ul > li:last-child > a > p{
+            line-height: 30px ;
+        }
+        #content{
+            background: var(--bgrcolor);
+            position:relative;
+            top:340px;
+            width: 100%;
+        }
+        #content .container1{
+            width: 950px;
+            margin-left: 285px;
+            padding-top: 40px;
+            
+            
+        }
+        #content .container1 p{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px ;
+        }
+        #content .container1 > img{
+            height: 330px;
+            margin-top: 10px;
+        }
+        #content .container1 .rightcontainer1 {
+            position:absolute;
+            top:40px;
+            left: 850px;
+            width: 385px;
+        }
+        #content .container1 .rightcontainer1 > h2 {
+            text-transform: uppercase;
+            
+            font-size: 18px ;
+            font-weight: bold;
+        }
+        #content .container1 .rightcontainer1 > ul {
+            float: left;
+            list-style-type: none;
+        
+            margin-top: 10px;
+            
+        }
+        #content .container1 .rightcontainer1 > ul > li {
+            padding-left: 5px;
+            line-height: 60px;
+            border-bottom: 1px solid rgb(247, 235, 72);
+            height: 60px;
+            overflow: hidden;
+            border-left: 2px solid transparent;
+        }
+        #content .container1 .rightcontainer1 > ul > li:hover {
+            background: rgb(247, 235, 72);
+            border-left: 2px solid var(--fontcolor) ;
+        }
+        #content .container1 .rightcontainer1 > ul > li > a {
+            text-decoration: none;
+            color: var(--fontcolor);
+        }
+        #content .container1 .rightcontainer1 > p {
+            line-height: 30px;
+            text-align: center;
+            background: rgb(255, 252, 77);
+            float: left;
+            width: 100%;
+            font-weight: unset;
+        }
+        #content .container1 .rightcontainer1 > p:hover {
+            background: rgba(255, 252, 77);
+        }
+        #content .container1 .rightcontainer1 > p >a {
+            color: black;
+            text-decoration: none;
+        }
+        #content .container2{
+            margin-left: 350px;
+            width: 950px;
+        }
+        #content .container2 img{
+            float: left;
+        }
+        
+        #content .container2 .choose{
+            padding-top: 50px;
+            padding-left: 500px;
+        }
+        #content .container2 .choose button{
+            color: black;
+            display: block;
+            font-size: 17px;
+            padding: 10px;
+            background: rgb(255, 254, 195);
+            width: 150px;
+            border-radius: 10px;
+        }
+        #content .container2 .choose button:focus-within{
+            background: white;
+        }
+
+
+        #footer{
+            margin-top: 340px;
+            padding: 50px 0 30px 0 ;
+            background: var(--bgrcolor);
+            text-align: center;
+        }
+ 
+        
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <i class="fas fa-home"></i>
+        <ul>
+            <li><a href="">Giới thiệu</a>
+                <ul>
+                    <li><a href="">Giới Thiệu Game</a></li>
+                    <li><a href="">Nhân Vật</a></li>
+                    <li><a href="">Điều Khoản Sử Dụng</a></li>
+                </ul>
+            </li>
+            <li><a href="">Thông tin</a>
+                <ul>
+                    <li><a href="">Tin Tức</a></li>
+                    <li><a href="">Sự Kiện</a></li>
+                    <li><a href="">Danh Sách Các Mốc Vip</a></li>
+                </ul>
+            </li>
+            <li><a href="">Hướng dẫn</a>
+                <ul>
+                    <li><a href="">Cốt Truyện Chính</a></li>
+                    <li><a href="">Thu Thập Vật Phẩm</a></li>
+                    <li><a href="">Cách Sửa Một Số Lỗi Thường Gặp </a></li>
+                </ul>
+            </li>
+            <li><a href="./Image.html">Hình ảnh</a></li>
+            <li><a href="">Cộng đồng</a></li>
+        </ul>
+
+    </div>
+    <div id="banner">
+        <div class="download">
+            <img src="./Imgs/avatar.jpg" alt="">
+            <p>The Darkness</p>
+            <ul>
+                <li><a href=""><i class="fab fa-apple"></i><p>TẢI GAME cho iOS</p></a></li>
+                <li><a href=""><i class="fab fa-android"></i><p>TẢI GAME cho ANDROID</p> </a></li>
+                <li><a href=""><i class="fas fa-robot"></i><p>TẢI APK</p></a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    <div id="content">
+        <div class="container1">
+            <p>Sự kiện hot</p>
+            <img src="./Imgs/1.jpg" alt="">
+            <div class="rightcontainer1">
+                <h2>Tin tức</h2>
+                <ul>
+                    <li><a href="">Hướng dẫn nhận Code</a></li>
+                    <li><a href="">Cốt truyện mới sắp mở ra</a></li>
+                    <li><a href="">Danh sách nhận thưởng quà tặng mừng sinh nhật 1 tuổi The Darkness</a></li>
+                    <li><a href="">Quà tri ân Player của The Darkness</a></li>
+                    <li><a href="">Hướng dẫn sự kiện Lễ tình nhân</a></li>
+                </ul>
+                <p><a href="">Xem thêm +</a></p>
+
+            </div>
+        
+        </div>
+        <div class="container2">
+            <img src="./Imgs/Picture1.png" style="height: 500px;" alt="" id="characters">
+            <div class="choose">
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture1.png'">Hàn Nguyệt</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture2.png'">La Yên</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture3.png'">Lục Anh</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture4.png'">Tử Anh</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture5.png'">Bạch Anh</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture6.png'">Hồng Anh</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture7.png'">An Nhã</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture8.png'">Hạ Lam</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture9.png'">Hạ Ngọc</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture10.png'">Tuyết Linh</button>
+                <button onclick="document.getElementById('characters').src='./Imgs/Picture11.png'">Dạ Tinh Thần</button>
+    
+            </div>
+            
+
+        </div>
+
+    </div>
+    <div id="footer">
+        <p><i class="far fa-copyright"></i> Công ty ABCXYZ</p>
+        <p>Địa chỉ: *** Trương Định, Hai Bà Trưng, Hà Nội</p>
+        <p>Giấy phép phê duyệt nội dung số: ***/QĐ-BTTT cấp ngày 30/2/2016 do bộ thông tin và truyền thông cấp</p>
+    </div>
+</body>
+</html>
